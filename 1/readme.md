@@ -58,5 +58,5 @@ The `results` list will contain boolean values indicating whether each request i
 
 ## Running the Script
 
-To run the script, simply run python rate_limit.py. The output will be printed to the console.
-Change the input according to your preference.
+To run the script, change the input according to your preference, simply run ```python rate_limit.py```. 
+The output will be printed to the console.
