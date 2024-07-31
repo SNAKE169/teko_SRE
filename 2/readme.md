@@ -4,11 +4,11 @@
 When the service grows and the API Gateway is deployed in a cluster model, the following design considerations should be taken into account to ensure efficient rate limiting across multiple instances:
 
 ### Key Components:
-1. **API Gateway Cluster**: Multiple instances of the API Gateway to handle increased traffic and provide high availability.
-2. **Distributed Rate Limiting**: Using a centralized data store like Redis to share rate limit state across all instances.
-3. **Centralized Logging and Monitoring (Optional)**: Tools like ELK Stack, Prometheus, and Grafana for logging and monitoring.
-4. **Load Balancer**: To distribute incoming requests across the API Gateway instances.
-5. **Data Store for Rate Limiting**: Redis for fast read and write operations and atomic counters.
+1. **Load Balancer**: To distribute incoming requests across the API Gateway instances.
+2. **API Gateway Cluster**: Multiple instances of the API Gateway to handle increased traffic and provide high availability.
+3. **Distributed Rate Limiting**: Using a centralized data store like Redis to share rate limit state across all instances.
+4. **Data Store for Rate Limiting**: Redis for fast read and write operations and atomic counters.
+5. **Centralized Logging and Monitoring (Optional)**: Tools like ELK Stack, Prometheus, and Grafana for logging and monitoring.
 
 ### High-Level Design:
 
