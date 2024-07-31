@@ -17,6 +17,26 @@ Here is an example of how to use the `rate_limit` function:
 2. Prepare a list of timestamps in ISO-8601 format.
 3. Call the `rate_limit` function with these parameters to get the results.
 
+```
+N = 10
+R = 3
+timestamps = [
+    "2022-01-20T00:13:05Z",
+    "2022-01-20T00:27:31Z",
+    "2022-01-20T00:45:27Z",
+    "2022-01-20T01:00:49Z",
+    "2022-01-20T01:15:45Z",
+    "2022-01-20T01:20:01Z",
+    "2022-01-20T01:50:09Z",
+    "2022-01-20T01:52:15Z",
+    "2022-01-20T01:54:00Z",
+    "2022-01-20T02:00:00Z"
+]
+
+results = rate_limit(N, R, timestamps)
+print(results)
+```
+
 ### Output
 
 The `results` list will contain boolean values indicating whether each request is allowed or not. For the provided example, the output will be:
